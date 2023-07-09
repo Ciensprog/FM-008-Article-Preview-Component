@@ -22,7 +22,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/CHALLENGE_SOLUTION_URL_SLUG](https://www.frontendmentor.io/solutions/CHALLENGE_SOLUTION_URL_SLUG)
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-component-jE08Y4LMR1](https://www.frontendmentor.io/solutions/article-preview-component-jE08Y4LMR1)
 - Live Site URL: [https://ciensprog.github.io/FM-008-Article-Preview-Component/](https://ciensprog.github.io/FM-008-Article-Preview-Component/)
 
 ### Built with
