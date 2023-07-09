@@ -6,9 +6,13 @@
 
 export function ArticleCardHeader() {
   return (
-    <header className="overflow-hidden rounded-t-[0.625rem]">
-      <picture className="">
-        <img src="banner.jpg" alt="Article banner" />
+    <header className="h-[10.5rem] overflow-hidden rounded-t-[0.625rem]">
+      <picture>
+        <img
+          src="banner.jpg"
+          className="h-full object-cover w-full"
+          alt="Article banner"
+        />
       </picture>
     </header>
   )
