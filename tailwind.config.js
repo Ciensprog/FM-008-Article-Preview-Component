@@ -1,5 +1,10 @@
 const colors = {
   default: '#ECF2F8',
+  grey: {
+    'very-light': '#9DAEC2',
+    light: '#6E8098',
+    normal: '#48556A',
+  },
 }
 
 /*
