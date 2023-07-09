@@ -46,7 +46,7 @@ export function App() {
               </p>
             </section>
             <section className="ml-auto">
-              <button className="bg-default flex h-8 items-center rounded-full text-grey-light w-8">
+              <button className="bg-default flex h-8 items-center overflow-hidden rounded-full text-grey-light w-8">
                 <IconShare />
                 <span className="sr-only">Share article</span>
               </button>
