@@ -46,7 +46,7 @@ export function ArticleCardFooter() {
             'flex h-8 items-center outline-none overflow-hidden ring-offset-2 rounded-full transition-colors w-8 z-10 focus:ring-4 hover:ring-4',
             opened
               ? [
-                  'bg-grey-light ring-grey-light ring-offset-grey-normal text-white',
+                  'bg-grey-light ring-grey-light ring-offset-grey-normal text-white md:bg-grey-light md:text-white',
                   'md:bg-default md:ring-grey-light/30 md:ring-offset-white md:text-grey-light',
                 ]
               : 'bg-default ring-grey-light/30 text-grey-light hover:ring-grey-light/30'
