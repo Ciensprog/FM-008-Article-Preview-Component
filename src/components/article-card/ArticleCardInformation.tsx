@@ -6,7 +6,7 @@
 
 export function ArticleCardInformation() {
   return (
-    <section className="pb-4 pt-9 px-8 md:pb-5 md:pt-8">
+    <div className="pb-4 pt-9 px-8 md:pb-5 md:pt-8">
       <h1 className="font-bold leading-6 tracking-[0.0125rem] md:leading-7 md:text-xl md:tracking-[0.015625rem]">
         Shift the overall look and feel by adding these wonderful touches to
         furniture in your home
@@ -16,6 +16,6 @@ export function ArticleCardInformation() {
         slightly bare and uninviting. I’ve got some simple tips to help you make
         any room feel complete.
       </p>
-    </section>
+    </div>
   )
 }

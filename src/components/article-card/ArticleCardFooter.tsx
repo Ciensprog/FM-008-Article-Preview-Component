@@ -32,15 +32,15 @@ export function ArticleCardFooter() {
           alt="Profile picture for Michelle Appleton"
         />
       </picture>
-      <section aria-hidden={opened}>
+      <div aria-hidden={opened}>
         <p className="font-bold leading-5 text-[0.8125rem] tracking-[0.0075rem]">
           Michelle Appleton
         </p>
         <p className="font-medium leading-5 text-[0.8125rem] text-grey-very-light tracking-[0.0075rem]">
           28 Jun 2020
         </p>
-      </section>
-      <section className="ml-auto z-10 md:flex md:justify-center md:relative">
+      </div>
+      <div className="ml-auto z-10 md:flex md:justify-center md:relative">
         <button
           className={clsx(
             'flex h-8 items-center outline-none overflow-hidden ring-offset-2 rounded-full transition-colors w-8 z-10 focus:ring-4 hover:ring-4',
@@ -83,7 +83,7 @@ export function ArticleCardFooter() {
             </ShareOptionItem>
           </ul>
         </div>
-      </section>
+      </div>
     </footer>
   )
 }
