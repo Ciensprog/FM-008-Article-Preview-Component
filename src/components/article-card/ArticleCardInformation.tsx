@@ -6,7 +6,7 @@
 
 export function ArticleCardInformation() {
   return (
-    <section className="pb-5 pt-9 px-8">
+    <section className="pb-4 pt-9 px-8">
       <h1 className="font-bold leading-6 tracking-[0.0125rem]">
         Shift the overall look and feel by adding these wonderful touches to
         furniture in your home
