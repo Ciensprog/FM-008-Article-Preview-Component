@@ -22,7 +22,7 @@ export function ArticleCardFooter() {
 
   return (
     <footer
-      className="flex gap-5 items-center overflow-hidden pb-5 pt-5 px-8 relative rounded-b-[0.625rem]"
+      className="flex gap-5 items-center overflow-hidden pb-5 pt-5 px-8 relative rounded-b-[0.625rem] md:overflow-visible md:pb-0 md:pt-0 md:static"
       ref={ref}
     >
       <picture className="block h-10 w-10" aria-hidden={opened}>
@@ -40,13 +40,16 @@ export function ArticleCardFooter() {
           28 Jun 2020
         </p>
       </section>
-      <section className="ml-auto z-10">
+      <section className="ml-auto z-10 md:flex md:justify-center md:relative">
         <button
           className={clsx(
-            'flex h-8 items-center outline-none overflow-hidden ring-offset-2 rounded-full transition-colors w-8 z-10 focus:ring-4',
+            'flex h-8 items-center outline-none overflow-hidden ring-offset-2 rounded-full transition-colors w-8 z-10 focus:ring-4 hover:ring-4',
             opened
-              ? 'bg-grey-light ring-grey-light ring-offset-grey-normal text-white'
-              : 'bg-default ring-grey-light/30 text-grey-light'
+              ? [
+                  'bg-grey-light ring-grey-light ring-offset-grey-normal text-white',
+                  'md:bg-default md:ring-grey-light/30 md:ring-offset-white md:text-grey-light',
+                ]
+              : 'bg-default ring-grey-light/30 text-grey-light hover:ring-grey-light/30'
           )}
           onClick={handlers.onToggleOpened}
         >
@@ -56,7 +59,9 @@ export function ArticleCardFooter() {
         <div
           className={clsx(
             'absolute bg-grey-normal flex gap-5 h-full items-center left-0 px-8 py-4 top-0 transition-all w-full -z-10',
-            'opacity-100 visible aria-hidden:invisible aria-hidden:opacity-0 aria-hidden:pointer-events-none'
+            'opacity-100 visible aria-hidden:invisible aria-hidden:opacity-0 aria-hidden:pointer-events-none',
+            'md:h-auto md:justify-center md:left-auto md:px-0 md:py-[1.125rem] md:rounded-[0.625rem] md:shadow-[0_10px_10px_rgba(201_213_225_/_0.50)] md:-top-[calc(100%+3rem)] md:w-[15.5rem]',
+            'md:after:absolute md:after:content-[""] md:after:border-grey-normal md:after:border-x-transparent md:after:border-t-[0.75rem] md:after:border-x-[0.75rem] md:after:left-auto md:after:bottom-[1px] md:after:translate-y-full'
           )}
           aria-hidden={!opened}
         >
@@ -96,7 +101,7 @@ function ShareOptionItem({
       <a
         href="/#"
         className={clsx(
-          'h-5 inline-block outline-none ring-offset-2 ring-offset-grey-normal ring-white/80 w-5 focus:ring-2',
+          'h-5 inline-block outline-none ring-offset-2 ring-offset-grey-normal ring-white/80 w-5 focus:ring-2 hover:opacity-80',
           circle && 'rounded-full'
         )}
         onClick={onClickWithPreventDefault}
