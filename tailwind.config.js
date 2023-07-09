@@ -1,5 +1,5 @@
 const colors = {
-  //
+  default: '#ECF2F8',
 }
 
 /*
